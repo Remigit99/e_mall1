@@ -1,15 +1,21 @@
-const express = require("express")
-const cors = require("cors")
+const express = require("express");
+const cors = require("cors");
 
-const app = express()
+const data = require("./data.js");
 
-const PORT = process.env.SERVER_PORT || 5000
+// console.log(data);
 
-app.use(cors())
-app.use(express.json())
+const app = express();
 
-app.listen(PORT,  () =>{
-    console.log(`Server running on PORT ${PORT}`)
-})
+const PORT = process.env.SERVER_PORT || 5000;
 
+app.use(cors());
+app.use(express.json());
 
+app.get("/products", (req, res) => {
+  res.send(data);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on PORT ${PORT}`);
+});
