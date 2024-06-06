@@ -11,7 +11,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav__container-right">
-          <div className="cart">
+          <div className="nav__cart">
             <IoBagOutline />
             <p className="items-count">0</p>
           </div>
