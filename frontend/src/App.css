@@ -33,7 +33,24 @@ nav{
 }
 
 
-/*======= NAVBAR  ========*/
+/*======= HOME  ========*/
+
+main{
+
+}
+
+.home__container{
+  padding: 8rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap :3rem
+}
+
+
+.product__img img{
+  width: 10rem;
+}
+
 /*======= NAVBAR  ========*/
 /*======= NAVBAR  ========*/
 /*======= NAVBAR  ========*/

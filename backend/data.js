@@ -1,57 +1,57 @@
  const postData = [
     {
         id: 1,
-        postImg: "blog1",
+        postImg: "https://res.cloudinary.com/dijn9eze1/image/upload/v1717669036/samples/ecommerce/swbj1v2fnpie2w4vrw8q.jpg",
         title: "Lorem ipsum dolor sit amet",
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate",
-        category: "Sci-Fic",
-        authorID: 6,
+        category: "Computing",
+        price: 1556,
     },
     {
         id: 2,
-        postImg: "blog2",
+        postImg: "https://res.cloudinary.com/dijn9eze1/image/upload/v1717669610/samples/ecommerce/Phones/jxihkhpww1i7yfhrr8pw.jpg",
         title: "Lorem ipsum dolor sit amet",
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate",
-        category: "Sci-Fic",
-        authorID: 5,
+        category: "Phones",
+        price: 245,
     },
     {
         id: 3,
-        postImg: "blog3",
+        postImg: "https://res.cloudinary.com/dijn9eze1/image/upload/v1717669990/samples/ecommerce/Shoes/hcgbmact1ljjxqm8qixc.png",
         title: "Lorem ipsum dolor sit amet",
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate",
-        category: "Sci-Fic",
-        authorID: 4,
+        category: "Fashion",
+        price: 144,
     },
     {
         id: 4,
-        postImg: "blog4",
+        postImg: "https://res.cloudinary.com/dijn9eze1/image/upload/v1717669611/samples/ecommerce/Phones/cxvntsss6ze2t6uhpvcj.jpg",
         title: "Lorem ipsum dolor sit amet",
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate",
-        category: "Sci-Fic",
-        authorID: 3,
+        category: "Phones",
+        price: 320,
     },
     {
         id: 5,
-        postImg: "blog5",
+        postImg: "https://res.cloudinary.com/dijn9eze1/image/upload/v1717669036/samples/ecommerce/mncr22zljuwc9fg3qev3.jpg",
         title: "Lorem ipsum dolor sit amet",
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate",
-        category: "Sci-Fic",
-        authorID: 2,
+        category: "Computing",
+       price: 2010,
     },
     {
         id: 6,
-        postImg: "blog6",
+        postImg: "https://res.cloudinary.com/dijn9eze1/image/upload/v1717669992/samples/ecommerce/Shoes/vjggztr3vfvvrs22wisz.png",
         title: "Lorem ipsum dolor sit amet",
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate",
-        category: "Sci-Fic",
-        authorID: 1,
+        category: "Fashoe",
+        price: 132,
     },
 ];
 
