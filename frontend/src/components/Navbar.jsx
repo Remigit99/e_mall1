@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import { IoBagOutline } from "react-icons/io5";
 // import { FiShoppingCart } from "react-icons/fi";
 // <FiShoppingCart />
@@ -18,10 +20,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav__container-right">
-          <div className="nav__cart">
+          <Link to="cart" className="nav__cart">
             <IoBagOutline />
             <p className="items-count">{data ? data.length : 0}</p>
-          </div>
+          </Link>
         </div>
       </div>
     </nav>

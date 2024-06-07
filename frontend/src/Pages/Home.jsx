@@ -1,6 +1,7 @@
 // import { useState, useEffect } from "react";
-
+import { useDispatch } from "react-redux";
 import { useGetProductsQuery } from "../../app/services/productsApi";
+import { addToCart } from "../../app/Features/cartSlice.js";
 
 const Home = () => {
   /*==== FETCHING USING USEEFFECT =======*/
@@ -25,7 +26,7 @@ const Home = () => {
   // }, []);
 
   /*==== USING RTK QUERY =======*/
-
+const dispatch = useDispatch()
   const { data, error, isLoading } = useGetProductsQuery();
   //  console.log(data)
 
@@ -52,7 +53,9 @@ const Home = () => {
               </div>
 
               <div className="btn">
-                <button className="cart-btn">Add to Cart</button>
+                <button className="cart-btn"
+                onClick={() => dispatch(addToCart(product))}
+                >Add to Cart</button>
               </div>
             </article>
           ))
