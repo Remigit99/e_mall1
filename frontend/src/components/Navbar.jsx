@@ -1,7 +1,14 @@
 import { IoBagOutline } from "react-icons/io5";
 // import { FiShoppingCart } from "react-icons/fi";
 // <FiShoppingCart />
+import { useGetProductsQuery } from "../../app/services/productsApi";
+
+
+
 const Navbar = () => {
+  const { data } = useGetProductsQuery();
+
+
   return (
     <nav>
       <div className="container nav__container">
@@ -13,7 +20,7 @@ const Navbar = () => {
         <div className="nav__container-right">
           <div className="nav__cart">
             <IoBagOutline />
-            <p className="items-count">0</p>
+            <p className="items-count">{data ? data.length : 0}</p>
           </div>
         </div>
       </div>
