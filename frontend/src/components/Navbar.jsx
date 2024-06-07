@@ -15,9 +15,9 @@ const Navbar = () => {
     <nav>
       <div className="container nav__container">
         <div className="nav__container-left">
-          <div className="logo">
+          <Link to="/" className="logo">
             <h2>E-Mall1</h2>
-          </div>
+          </Link>
         </div>
         <div className="nav__container-right">
           <Link to="cart" className="nav__cart">

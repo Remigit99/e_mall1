@@ -21,6 +21,9 @@ console.log(cartItems)
       {
         cartItems.map((product) => (
           <article key={product.id} className="product">
+
+           
+
             <div className="product__img">
               <img src={product.postImg} alt={product.title} />
             </div>
@@ -29,6 +32,7 @@ console.log(cartItems)
               <h5>{product.title}</h5>
               <p>{product.category}</p>
               <h5>${product.price}</h5>
+              <h2>{product.productQuantity}</h2>
             </div>
 
             {/* <div className="btn">
