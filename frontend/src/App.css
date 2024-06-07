@@ -46,9 +46,25 @@ nav{
   gap :3rem
 }
 
-
+.product{
+  padding: 0.5rem;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.24);
+border-radius: 1rem;
+}
 .product__img img{
   width: 10rem;
+  height: max-content;
+}
+
+.btn{
+  margin: 1.5rem 0 1rem;
+}
+
+.btn .cart-btn{
+ background-color: chartreuse;
+ color: white;
+ padding: 0.5rem 1.5rem;
+ cursor: pointer;
 }
 
 /*======= NAVBAR  ========*/

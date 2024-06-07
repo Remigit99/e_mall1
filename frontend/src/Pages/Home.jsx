@@ -40,7 +40,7 @@ const Home = () => {
           <h1> Loading.... </h1>
         ) : (
           data.map((product) => (
-            <article key={product.id}>
+            <article key={product.id} className="product">
               <div className="product__img">
                 <img src={product.postImg} alt={product.title} />
               </div>
@@ -49,6 +49,10 @@ const Home = () => {
                 <h5>{product.title}</h5>
                 <p>{product.category}</p>
                 <h5>${product.price}</h5>
+              </div>
+
+              <div className="btn">
+                <button className="cart-btn">Add to Cart</button>
               </div>
             </article>
           ))
