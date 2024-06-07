@@ -3,12 +3,14 @@ import {Link} from "react-router-dom"
 import { IoBagOutline } from "react-icons/io5";
 // import { FiShoppingCart } from "react-icons/fi";
 // <FiShoppingCart />
-import { useGetProductsQuery } from "../../app/services/productsApi";
+// import { useGetProductsQuery } from "../../app/services/productsApi";
 
-
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const { data } = useGetProductsQuery();
+  // const { data } = useGetProductsQuery();
+
+  const {cartTotalQuantity} = useSelector(state => state.cart)
 
 
   return (
@@ -22,7 +24,7 @@ const Navbar = () => {
         <div className="nav__container-right">
           <Link to="cart" className="nav__cart">
             <IoBagOutline />
-            <p className="items-count">{data ? data.length : 0}</p>
+            <p className="items-count">{cartTotalQuantity ? cartTotalQuantity : 0}</p>
           </Link>
         </div>
       </div>

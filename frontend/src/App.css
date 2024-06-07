@@ -67,6 +67,10 @@ border-radius: 1rem;
  cursor: pointer;
 }
 
-/*======= NAVBAR  ========*/
+/*======= CART  ========*/
+.cart__container{
+  padding: 8rem 0 2rem;
+}
+
 /*======= NAVBAR  ========*/
 /*======= NAVBAR  ========*/
